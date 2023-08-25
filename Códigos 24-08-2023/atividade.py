@@ -31,13 +31,19 @@ while(True):
         else:
             print("Informe um nome válido com pelo menos um sobrenome\n")   
     elif (opcao == "2"):
-        ordenado=dict(sorted(funcionarios.items()))
-        print(ordenado)
+        if (len(funcionarios) == 0):
+            print("Lista vazia!")
+        else:
+            ordenado=dict(sorted(funcionarios.items()))
+            print(ordenado)
 
     elif (opcao == "3"):
-        remove=input("Informe qual registro gostaria de excluir\n")
-        del funcionarios[remove]
-        print(funcionarios)
+        if (len(funcionarios) != 0):
+            remove=input("Informe qual registro gostaria de excluir\n")
+            del funcionarios[remove]
+            print(funcionarios)
+        else:
+            print("Lista vazia!")
     
     if (opcao not in ['1','2','3']):
         print("Informe uma opção válida!")
