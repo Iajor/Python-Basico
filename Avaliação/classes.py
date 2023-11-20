@@ -6,6 +6,10 @@ class Noticia:
         self.palavrasChave = [palavrasChave1, palavrasChave2, palavrasChave3]
     
     def __str__(self):
-        return f'{self.palavrasChave[0]}'
-    
+        print(self.titulo)
+        print(self.categoria)
+        print(self.texto)
+        print(self.palavrasChave[0])
+        print(self.palavrasChave[1])
+        print(self.palavrasChave[2])
     

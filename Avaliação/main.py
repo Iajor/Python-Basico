@@ -23,19 +23,23 @@ while(True):
     opcao=metodos.exibirMenu()
 
     if opcao == '1':
+        os.system('cls')
         metodos.cadastrarNoticia(listaNoticias)
 
     elif opcao == '2':
-        metodos.alterarNoticia(listaNoticias)
-
-    elif opcao == '3':
+        os.system('cls')
         metodos.pesquisarNoticia(listaNoticias)
 
+    elif opcao == '3':
+        os.system('cls')
+        metodos.alterarNoticia(listaNoticias)
+
     elif opcao == '4':
-        metodos.removerNoticia()
+        os.system('cls')
+        metodos.removerNoticia(listaNoticias)
 
     elif opcao == '5':
-        print(listaNoticias)
+        print('Encerrando...')
         break
 
     else:
